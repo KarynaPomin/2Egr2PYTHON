@@ -1,6 +1,6 @@
-import numpy as np
+import numpy as np # py -m pip install numpy --> 
 
-from matplotlib import pyplot  #pip install numpy // pip install Matplotlib
+from matplotlib import pyplot  # py -m pip install Matplotlib --> 
 
 def f(x):
     return np.sqrt(x) + 2
