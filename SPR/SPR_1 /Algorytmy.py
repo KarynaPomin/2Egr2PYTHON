@@ -69,6 +69,19 @@ def Bisekcja(a, b, d):
         print("Krok", krok, "--- A:", a, "i B:", b)
     return krok
 
+def znowuBis(a, b, eps):
+    def f1(x):
+        return x**3 - x - 2
+    
+    
+    while abs(a - b) > eps:
+        x = (a + b) / 2
+        if f1(a) * f1(x) <= 0:
+            b = x
+        else:
+            a = x
+        print(x)
+
 #print(Bisekcja(0, 2, 0.01))
 
 # LEADER
