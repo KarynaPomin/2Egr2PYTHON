@@ -10,7 +10,7 @@ def Trapez(a, b, n, myFuction):
     dx = (b - a) / n
     suma = 0
     for i in range(n):
-        suma += (myFuction(a + dx * i) * dx + myFuction(a + dx * i + dx)) / 2
+        suma += ((myFuction(a + dx * i) + myFuction(a + dx * i + dx)) * dx) / 2
     return suma
 
 # Ile worków nawozu trzeba kupić by to nawiźć nawozem do traw firmy "Nawóz do traw"?
